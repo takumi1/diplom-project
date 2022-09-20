@@ -1,0 +1,26 @@
+.catalogTitle {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+}
+
+.searchForm {
+    display: flex;
+    justify-content: center;
+}
+
+.searchInput {
+    border-radius: 30px;
+    border: none;
+    padding: .5em 2em;
+    box-shadow: 0 0 4px 1px #D9E1E1FF;
+    margin-bottom: 2em;
+    width: 130em;
+
+}
+.searchInput:focus {
+    outline: 2px solid #D9E1E1FF;
+}

@@ -1,0 +1,32 @@
+.container {
+    min-height: 60em;
+
+}
+
+.innerWrapper {
+
+}
+
+.productCards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin-left: 20%;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+}
+.loadMoreButton {
+    border: 1px solid #B1B7BAFF;
+    background-color: #FFF;
+    border-radius: 3px;
+    color: #B1B7BAFF;
+    padding: .7em;
+    line-height: .9em;
+    cursor: pointer;
+    margin-bottom: 2em;
+}

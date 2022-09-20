@@ -1,0 +1,128 @@
+.cartTitle {
+    font-weight: 600;
+    font-size: 2em;
+    margin: 1em 45% 1em 45%;
+}
+
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+
+}
+
+table.table, table.table td, table.table th {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+table.table td, table.table th {
+    padding: 3px;
+    width: 30px;
+    height: 35px;
+    border: 1px solid #DEE3E7;
+}
+
+table.table th {
+    background: #347c99;
+    color: #fff;
+    font-weight: normal;
+    border: 1px solid #DEE3E7;
+}
+.orderTitle {
+    font-weight: 600;
+    font-size: 2em;
+    margin: 1em 42% 1em 42%;
+}
+
+.tableTitles td {
+    font-weight: 600;
+}
+.total {
+    text-align: right;
+}
+.makeOrder {
+    display: flex;
+    flex-direction: column;
+    margin: 0 39%;
+    border: 1px solid #DEE3E7;
+    margin-bottom: 2em;
+}
+.orderForm {
+    display: flex;
+    flex-direction: column;
+}
+.orderForm label {
+    display: flex;
+    flex-direction: column;
+}
+.rulesAccept {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.rulesAccept input {
+    display: block;
+}
+span {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+.orderSuccess, .orderTitle {
+display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+}
+.orderForm input {
+    border: 1px solid #DEE3E7;
+}
+.phoneLabel, .addressLabel {
+    margin: 0 1em;
+    font-size: .9em;
+}
+.addressInput {
+    margin-bottom: 1em;
+}
+.addressInput, .phoneInput {
+    padding: .5em;
+    border-radius: 5px;
+}
+.rulesAccept {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+.rulesAccept div {
+    line-height: .8em;
+    margin-left: .6em;
+
+}
+.buttonWrapper {
+    display: flex;
+    justify-content: left;
+    margin-left: 1em;
+}
+.orderButton, .deleteButton {
+    border: 1px solid #B1B7BAFF;
+    background-color: #FFF;
+    border-radius: 3px;
+    color: #B1B7BAFF;
+    padding: .7em;
+    line-height: .9em;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.deleteButton {
+    border: 1px solid #E76573;
+    color: #E76573;
+    padding: .6em .7em;
+    margin-left: 1em;
+}

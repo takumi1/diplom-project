@@ -1,0 +1,9 @@
+.list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+h2 {
+    text-align: center;
+    margin: 2em;
+}

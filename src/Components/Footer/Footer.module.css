@@ -1,0 +1,67 @@
+.footerContainer {
+    background-color: #F7FAFA;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    padding: 2em;
+}
+
+.menuList {
+    color: #949294;
+}
+
+.menuHeader {
+    margin-bottom: 1em;
+}
+
+.menuList {
+    margin-left: 1em;
+}
+
+.menuList div {
+    margin-bottom: 1em;
+}
+
+.payment {
+    width: 18%;
+}
+
+.paymentSprite {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.paymentSprite div {
+    background-image: url("../../img/footer-sprite.png");
+    width: 200px;
+    height: 35px;
+    background-repeat: no-repeat;
+
+}
+.paymentSecond {
+    width: 100px !important;
+    background-position: -5px -40px;
+}
+.shopDescription {
+    font-size: .8em;
+}
+.contacts {
+    text-align: right;
+    color: #949294;
+}
+.contactsHeader {
+    margin-bottom: .5em;
+    color: #000;
+}
+.contactsText span {
+    color: #000;
+}
+.socialIcons {
+    margin-top: .5em;
+    margin-left: 7em;
+    background-image: url("../../img/footer-sprite.png");
+    width: 100px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: -95px -40px;
+}
