@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: #F7FAFA;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainPart {
+    display: flex;
+    margin: 1em;
+}
+
+.logo {
+    background-image: url(../../img/header-logo.png);
+    width: 184px;
+    height: 59px;
+}
+
+.links {
+    display: flex;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.link {
+    color: #949294;
+    margin-right: 1em;
+    text-decoration: none;
+}
+.linkActive {
+    color: #000;
+    font-weight: 500;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+.options {
+    display: flex;
+    margin: 1em;
+    margin-top: 1.5em;
+}
+
+.search {
+    background-image: url(../../img/header-controls-sprite.png);
+    width: 32px;
+    height: 32px;
+    background-position: -61px 0;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.cart {
+    background-image: url(../../img/header-controls-sprite.png);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.banner {
+    margin: 0 auto;
+    background-image: url(../../img/banner.jpg);
+    width: 1201px;
+    height: 305px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 0px 4px 4px #FFF;
+    position: relative;
+}
+
+.banner:after {
+    position: absolute;
+    content: "К весне готовы!";
+    left: 62%;
+    top: 50%;
+    height: 2em;
+    width: 14em;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.8em;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(270deg, rgba(161, 179, 191, 0.8) 72.59%, rgba(161, 179, 191, 0) 88.05%);
+}
+.cartQuantity {
+    margin: -3px -10px;
+    background-color: #FF788C;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: .8em;
+}
+.hiddenQuantity {
+    margin: -3px -10px;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.searchInput {
+    margin: 0 -40px;
+    border-radius: 30px;
+    border: none;
+    padding: .6em 2em;
+    box-shadow: 0 0 4px 1px #D9E1E1FF;
+}
+.searchInput:focus {
+outline: 2px solid #D9E1E1FF;
+}
