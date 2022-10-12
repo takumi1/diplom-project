@@ -4,7 +4,7 @@ export const fetchPostOrder = createAsyncThunk(
     'bestsellers/fetchPostOrder',
     async function (body, {rejectWithValue}) {
         try {
-            const response = await fetch('http://localhost:7070/api/order', {
+            const response = await fetch('http://diplomserv34.herokuapp.com/api/order', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

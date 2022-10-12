@@ -4,7 +4,7 @@ export const fetchCategories = createAsyncThunk(
     'categories/fetchCategories',
     async function (_, {rejectWithValue}) {
         try {
-            const response = await fetch('http://localhost:7070/api/categories');
+            const response = await fetch('http://diplomserv34.herokuapp.com/api/categories');
             if (!response.ok) {
                 throw new Error('Server Error');
             }

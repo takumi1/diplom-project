@@ -4,7 +4,7 @@ export const fetchBestsellers = createAsyncThunk(
     'bestsellers/fetchBestsellers',
     async function (_, {rejectWithValue}) {
         try {
-            const response = await fetch('http://localhost:7070/api/top-sales');
+            const response = await fetch('http://diplomserv34.herokuapp.com/api/top-sales');
             if (!response.ok) {
                 throw new Error('Server Error');
             }
