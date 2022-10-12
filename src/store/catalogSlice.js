@@ -5,7 +5,7 @@ export const fetchCatalog = createAsyncThunk(
     async function (_, {rejectWithValue}) {
 
         try {
-            const response = await fetch('http://diplomserv34.herokuapp.com/api/items');
+            const response = await fetch('https://diplomserv34.herokuapp.com/api/items');
             if (!response.ok) {
                 throw new Error('Server Error');
             }
@@ -23,7 +23,7 @@ export const fetchFilteredCatalog = createAsyncThunk(
     'products/fetchFilteredCatalog',
     async function (e, {rejectWithValue}) {
         try {
-            const response = await fetch(`http://diplomserv34.herokuapp.com/api/items?q=${e}`);
+            const response = await fetch(`https://diplomserv34.herokuapp.com/api/items?q=${e}`);
             if (!response.ok) {
                 throw new Error('Server Error');
             }
@@ -40,7 +40,7 @@ export const fetchCategorizedCatalog = createAsyncThunk(
     'products/fetchCategorizedCatalog',
     async function (id, {rejectWithValue}) {
         try {
-            const response = await fetch(`http://diplomserv34.herokuapp.com/api/items?categoryId=${id}`);
+            const response = await fetch(`https://diplomserv34.herokuapp.com/api/items?categoryId=${id}`);
             if (!response.ok) {
                 throw new Error('Server Error');
             }
@@ -58,7 +58,7 @@ export const fetchLoadMore = createAsyncThunk(
     async function (p, {rejectWithValue}) {
         try {
 
-            const response = await fetch(`http://diplomserv34.herokuapp.com/api/items?offset=${p}`);
+            const response = await fetch(`https://diplomserv34.herokuapp.com/api/items?offset=${p}`);
             if (!response.ok) {
                 throw new Error('Server Error');
             }
@@ -77,7 +77,7 @@ export const fetchLoadMoreFiltered = createAsyncThunk(
     async function (p, {rejectWithValue}) {
         const {pos, txt} = p;
         try {
-            const response = await fetch(`http://diplomserv34.herokuapp.com/api/items?q=${txt}&offset=${pos}`);
+            const response = await fetch(`https://diplomserv34.herokuapp.com/api/items?q=${txt}&offset=${pos}`);
             if (!response.ok) {
                 throw new Error('Server Error');
             }
@@ -98,7 +98,7 @@ export const fetchLoadMoreCategory = createAsyncThunk(
         const {pos, cat} = p;
         try {
 
-            const response = await fetch(`http://diplomserv34.herokuapp.com/api/items?categoryId=${cat}&offset=${pos}`);
+            const response = await fetch(`https://diplomserv34.herokuapp.com/api/items?categoryId=${cat}&offset=${pos}`);
             if (!response.ok) {
                 throw new Error('Server Error');
             }
@@ -117,7 +117,7 @@ export const fetchFilteredCategory = createAsyncThunk(
         const {txt, cat} = p;
         try {
 
-            const response = await fetch(`http://diplomserv34.herokuapp.com/api/items?q=${txt}&categoryId=${cat}`);
+            const response = await fetch(`https://diplomserv34.herokuapp.com/api/items?q=${txt}&categoryId=${cat}`);
             if (!response.ok) {
                 throw new Error('Server Error');
             }
@@ -135,7 +135,7 @@ export const fetchLoadMoreFilteredCategory = createAsyncThunk(
         const {txt, cat, pos} = p;
         try {
 
-            const response = await fetch(`http://diplomserv34.herokuapp.com/api/items?q=${txt}&categoryId=${cat}&offset=${pos}`);
+            const response = await fetch(`https://diplomserv34.herokuapp.com/api/items?q=${txt}&categoryId=${cat}&offset=${pos}`);
             if (!response.ok) {
                 throw new Error('Server Error');
             }
@@ -151,7 +151,7 @@ export const fetchGetProductCard = createAsyncThunk(
     'products/fetchGetProductCard',
     async function (id, {rejectWithValue}) {
         try {
-            const response = await fetch(`http://diplomserv34.herokuapp.com/api/items/${id}`);
+            const response = await fetch(`https://diplomserv34.herokuapp.com/api/items/${id}`);
             if (!response.ok) {
                 throw new Error('Server Error');
             }
