@@ -27,9 +27,9 @@ const Footer = () => {
             <div className={s.contacts}>
                 <div className={s.contactsHeader}><h4>Контакты:</h4></div>
                 <div className={s.contactsText}>
-                    +7 495 79 03 5 03
+                    +7 495 00 00 00 00
                     <br />
-                <span>Ежедневно: с 09-00 до 21-00</span>
+                <span>Ежедневно: с 00-00 до 00-00</span>
                     <br />
                     office@bosanoga.ru
                 </div>
