@@ -12,8 +12,8 @@ import {
 
 
 const Categories = (props) => {
-
-    const [activeCategory, setActiveCategory] = useState(11)
+    const CATEGORY_ID_ALL = 11
+    const [activeCategory, setActiveCategory] = useState(CATEGORY_ID_ALL)
 
     const dispatch = useDispatch();
     const categories = useSelector(state => state.categories.categories);
@@ -51,8 +51,8 @@ const Categories = (props) => {
         <div>
 
             <ul className={s.list}>
-                <li className={activeCategory == 11 ? 'liActive' : 'liInactive'}
-                    onClick={() => handleAllClick(11)}>Все
+                <li className={activeCategory == CATEGORY_ID_ALL ? 'liActive' : 'liInactive'}
+                    onClick={() => handleAllClick(CATEGORY_ID_ALL)}>Все
                 </li>
                 {categories.map((i) => (
                     <CategoryItem

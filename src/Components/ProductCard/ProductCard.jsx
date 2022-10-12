@@ -8,6 +8,7 @@ import s from './ProductCard.module.css'
 import SizeButton from "./SizeButton";
 import {increment} from "../../store/cartUpdateSlice";
 import shortid from "shortid";
+import Loader from "../Loader/Loader";
 
 
 const ProductCard = (props) => {
@@ -99,16 +100,7 @@ const ProductCard = (props) => {
                 <div className={s.innerPart}>
                     {status === 'resolvedProduct' ? <div className={s.picture}
                                                          style={{backgroundImage: `url("${products.images[0]}")`}}></div> :
-                        <div className="lds-roller">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>}
+                        <Loader />}
 
                     <div className={s.description}>
                         <table className={s.table}>

@@ -17,6 +17,13 @@ const BuyerCart = () => {
     const [totalPrice, setTotalPrice] = useState(0)
     const [successOrder, setSuccessOrder] = useState(false)
 
+    useEffect(() => {
+    let lsLength = localStorage.length;
+    let key = localStorage.key(lsLength-1)
+    let item = JSON.parse(localStorage.getItem(key));
+    if (item && item.title === undefined) localStorage.clear()
+    }, []);
+
     const calcMax = () => {
         let keyArr = []
         for (let i = 0; i <= localStorage.length; i++) {
@@ -33,7 +40,8 @@ const BuyerCart = () => {
         let order = 1;
         for (let i = 0; i <= calcMax(); i++) {
             let lsItem = JSON.parse(localStorage.getItem(i + 1));
-            if (lsItem != null) {
+            if (lsItem != null && lsItem.id != null) {
+                console.log(lsItem.id)
                 lsItem.orderId = order;
                 order += 1
                 parsedArr.push(lsItem)

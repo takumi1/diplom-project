@@ -9,6 +9,7 @@ import {
     fetchLoadMoreCategory, fetchLoadMoreFiltered,
     fetchLoadMoreFilteredCategory
 } from "../../store/catalogSlice";
+import Loader from "../Loader/Loader";
 
 const ProductList = (props) => {
 
@@ -88,16 +89,7 @@ const ProductList = (props) => {
                             key={index}
                             {...i}
                         />
-                    )) : <div className="lds-roller">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>}
+                    )) : <Loader />}
                 </div>
             </div>
             {products.length != 0 ?

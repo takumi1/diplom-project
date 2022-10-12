@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import { fetchBestsellers } from "../../store/bestsellersSlice";
 import PreviewCard from "../PreviewCard/PreviewCard";
 import s from './Bestsellers.module.css'
+import Loader from "../Loader/Loader";
 
 const Bestsellers = () => {
     const dispatch = useDispatch();
@@ -24,16 +25,7 @@ const Bestsellers = () => {
                         key={i.id}
                         {...i}
                     />
-                )) : <div className="lds-roller">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>}
+                )) : <Loader />}
             </div>
             </div>
         </div>
