@@ -36,3 +36,7 @@
     cursor: pointer;
     text-decoration: none;
 }
+.buyButton:hover {
+    background-color: #B1B7BAFF;
+    color: white;
+}

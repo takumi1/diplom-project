@@ -30,3 +30,7 @@
     cursor: pointer;
     margin-bottom: 2em;
 }
+.loadMoreButton:hover {
+    background-color: #B1B7BAFF;
+    color: white;
+}

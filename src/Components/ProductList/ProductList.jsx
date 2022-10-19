@@ -92,11 +92,10 @@ const ProductList = (props) => {
                     )) : <Loader />}
                 </div>
             </div>
-            {products.length != 0 ?
+            {products.length !== 0 ? status === 'resolved' ?
                 <div className={s.buttonWrapper}>
                     <button className={s.loadMoreButton} onClick={() => handleLoadMore()}>Загрузить ещё</button>
-                </div> : ''
-
+                </div> : '' : ''
             }
 
         </div>

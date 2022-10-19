@@ -120,3 +120,9 @@ table.table td, table.iksweb th {
 .toCartActive button:hover {
 border: 1px solid pink;
 }
+.toCartActive button:active {
+    transform: scale(0.99);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 12px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}

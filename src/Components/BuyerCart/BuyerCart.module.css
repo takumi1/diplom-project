@@ -120,9 +120,20 @@ display: flex;
     margin-top: 1em;
     margin-bottom: 2em;
 }
+.orderButton:hover {
+    background-color: #B1B7BAFF;
+    color: white;
+}
 .deleteButton {
     border: 1px solid #E76573;
     color: #E76573;
+    padding: .6em .7em;
+    margin-left: 1em;
+}
+.deleteButton:hover {
+    border: 1px solid #E76573;
+    background-color: #E76573;
+    color: white;
     padding: .6em .7em;
     margin-left: 1em;
 }
