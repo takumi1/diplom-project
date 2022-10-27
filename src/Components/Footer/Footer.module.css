@@ -32,7 +32,6 @@
 }
 
 .paymentSprite div {
-    background-image: url("../../img/footer-sprite.png");
     width: 200px;
     height: 35px;
     background-repeat: no-repeat;
